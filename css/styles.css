@@ -5,6 +5,12 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 /* Root */
 html {
   font-size: 62.5%;
@@ -82,6 +88,7 @@ a {
   border-radius: 20px;
   padding: 0.5rem 1.5rem;
   font-size: 2rem;
+  white-space: nowrap;
 }
 .badges--primary {
   background-color: var(--color-primary);
@@ -146,4 +153,49 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+.btn {
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border-radius: 40px;
+  cursor: pointer;
+  margin: 1rem 0;
+  text-align: center;
+}
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.btn--primary:hover {
+  background-color: #4596ff;
+}
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+.btn--secondary:hover {
+  background-color: #21dcfd;
+}
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+.btn--accent:hover {
+  background-color: #fb4f22;
+}
+
+.btn--block {
+  display: inline-block;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
