@@ -33,6 +33,7 @@ h5,
 h6 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -579,5 +580,30 @@ input {
     font-size: 1.6rem;
     opacity: 1;
     max-height: 100%;
+  }
+}
+
+/* Hero */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero__image {
+  width: 100%;
+}
+.hero__content {
+  align-self: center;
+}
+.hero__togline {
+  font-size: 2rem;
+  color: #9aa3ad;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+  }
+  .hero {
+    padding-top: 0;
   }
 }
