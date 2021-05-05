@@ -13,6 +13,11 @@
 *::before {
   box-sizing: border-box;
 }
+
+::selection {
+  background-color: var(--color-primary);
+  color: #fff;
+}
 /* Root */
 html {
   font-size: 62.5%;
@@ -368,13 +373,15 @@ input {
 }
 .media__title {
   margin-top: 0;
-  color: #fff;
 }
 .media__body {
   margin: 0 2rem;
 }
 .media__image {
   margin-top: 1rem;
+}
+.block--dark .media__title {
+  color: #fff;
 }
 
 /* Quote */
@@ -684,7 +691,7 @@ input {
 
 /* ShowCase Block*/
 
-.showcase__image {
+.showcase__image > img {
   width: 100%;
 }
 @media screen and (min-width: 1440px) {
@@ -692,8 +699,10 @@ input {
     grid-template-columns: 50% 50%;
   }
   .showcase__image {
+    justify-self: end;
+  }
+  .showcase__image > img {
     width: auto;
     max-width: 700px;
-    justify-self: end;
   }
 }
