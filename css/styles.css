@@ -253,9 +253,11 @@ input {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px 2px;
+  padding: 2rem 4vw;
 }
 ::placeholder {
   color: #d6d3e3;
@@ -464,6 +466,9 @@ input {
   padding: 4rem;
   border-radius: 7px;
 }
+.callout--sinup {
+  transform: translateY(13rem);
+}
 .callout--primary {
   background-color: var(--color-primary);
   color: #fff;
@@ -644,11 +649,12 @@ input {
 
 .domain__price {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   font-size: 2rem;
   font-weight: 600;
+  color: var(--color-headings);
 }
 
 @media screen and (min-width: 768px) {
@@ -710,6 +716,7 @@ input {
 /* Footer */
 .footer {
   background-color: #232323;
+  padding-top: 25rem;
 }
 .footer__heading {
   color: #fff;
