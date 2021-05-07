@@ -1,0 +1,29 @@
+{
+  "name": "Moshify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engmrms/moshify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/engmrms/moshify/issues"
+  },
+  "homepage": "https://github.com/engmrms/moshify#readme",
+  "dependencies": {
+    "g": "^2.0.1",
+    "parcel": "^2.0.0-beta.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
