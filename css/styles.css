@@ -449,6 +449,7 @@ input {
 }
 .testimonial__image > img {
   width: 100%;
+  height: auto;
 }
 .testimonial__image .icon-container {
   position: absolute;
@@ -620,6 +621,7 @@ input {
 
 .hero__image {
   width: 100%;
+  height: auto;
 }
 .hero__content {
   align-self: center;
@@ -688,6 +690,7 @@ input {
 }
 .feature__image {
   width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 768px) {
   .feature:nth-last-of-type(even) .feature__content {
@@ -699,6 +702,7 @@ input {
 
 .showcase__image > img {
   width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 1440px) {
   .showcase .grid--2 {
